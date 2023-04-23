@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="CSS/styles.css">
+	<title>Mymeds</title>
+    <link rel="shortcut icon" href="img/bxs-capsule.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">  
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header>
+            <nav>
+                <div class="navbar-inner"> 
+                    <a href="#" class="brand">
+                        <i class='bx bxs-capsule'></i>
+                        <span class="text">Mymeds</span>
+                    </a> 
+                </div>
+            </nav>
+        </header>
+        <!-- main -->
+        <div class="container">
+            <main id="med-list">
+                <article class="med-to-do">
+                    <h1>Medicamentos</h1>
+                        <ul id="medicamentos">
+                            <li contenteditable="true">Medicamento 1</li>
+                            <li contenteditable="true">Medicamento 2</li>
+                            <li contenteditable="true">Medicamento 3</li>
+                            <li contenteditable="true">Medicamento 4</li>
+                            <li contenteditable="true">Medicamento 5</li>
+                            <li contenteditable="true">Medicamento 6</li>
+                            <li contenteditable="true">Medicamento 7</li>
+                            <li contenteditable="true">Medicamento 8</li>
+                            <li contenteditable="true">Medicamento 9</li>
+                            <li contenteditable="true">Medicamento 10</li>
+                            <li contenteditable="true">Medicamento 11</li>
+                            <li contenteditable="true">Medicamento 12</li>
+                        </ul>
+                </article>
+            </main>
+            <!-- Aside -->
+            <aside id="sidebar">
+                <section id="calculadora">
+                  <h2>Calcular custos</h2>
+                      <label for="num1">Primeira cifra:</label>
+                      <input type="number" id="num1" name="num1"><br>
+                      <label for="num2">Segunda cifra:</label>
+                      <input type="number" id="num2" name="num2"><br>
+                      <br>
+                      <button class="calculator-bnt" onclick="add()">+</button>
+                      <button class="calculator-bnt" onclick="subtract()">-</button>
+                      <button class="calculator-bnt" onclick="multiply()">*</button>
+                      <button class="calculator-bnt" onclick="divide()">/</button>
+                      <br><br>
+                      <label for="result">Resultado:</label>
+                      <input type="number" id="result" name="result" readonly>
+                </section>
+                <article class="med-to-do">
+                    <h2>Total de gastos</h2>
+                        <ul id="medicamentos">
+                            <li contenteditable="true">Medicamentos</li>
+                            <li contenteditable="true">Alimentos</li>
+                            <li contenteditable="true">Outros</li>
+                        </ul>
+                </article>
+                <article class="med-to-do">
+                    <h2>Total de gastos no mês</h2>
+                        <ul id="medicamentos">
+                            <li contenteditable="true">Total de gastos no mês:</li>
+                            <input type="date">
+                        </ul>
+                </article>
+                </aside>
+            </div>
+            <!-- footer -->
+            <footer id="footer">
+                <h2>Mymeds</h2>
+                <p>Organização de medicamentos</p>
+                <p>2023 ©Lucas Landivar</p>
+              </footer>
+        <script src="script.js"></script>
+    </body>
